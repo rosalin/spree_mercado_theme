@@ -1,0 +1,11 @@
+/*
+ *= require store/spree_core
+ *= require store/raw
+ *= require store/home
+ *= require store/taxonomies
+*/
+
+body {
+	/*background : red;*/
+
+}
