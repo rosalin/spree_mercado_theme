@@ -5,7 +5,149 @@
  *= require store/taxonomies
 */
 
+a:link {-webkit-tap-highlight-color: black;}
+
 body {
-	/*background : red;*/
+	background : white;
+}
+
+nav#taxonomies {
+   background: yellow;
+ }
+
+.taxonomy-root {
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: orangered;
+      font-weight: bold;
 
 }
+.taxons-list {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      list-style-position: outside;
+      list-style-type: disc;
+}
+
+li { color: orangered; }
+
+a{
+    text-decoration: none;
+    color: gray
+
+ }
+
+ a:hover {
+      color: gray;
+      text-decoration: underline;
+ }
+
+div#sidebar{
+    background-color: #f1eaf6;
+    -moz-box-shadow: 2px 2px 2px 2px #d4d4b9;
+    border-radius: 10px;
+}
+
+taxon_sidebar_navigation{
+    background: red;
+}
+
+nav#taxonomies {
+      text-align: center;
+      background: blue;
+}
+
+/*
+div[data-hook="taxon_sidebar_navigation"]{
+     background-color: orangered;
+}*/
+
+div.filter_choices{
+    background: purple;
+}
+
+div.category{
+    margin-left: 20px;
+}
+
+ul.filter_choices{
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+span.category{
+    margin-left: 20px;
+    margin-top: 90px;
+    color: #748C32;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+li.nowrap{
+    color: gray;
+}
+
+div[data-hook="homepage_products"]{
+    border: 1px solid transparent;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+li[data-hook="products_list_item"]{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius : 5px;
+    border: 1px solid silver;
+}
+
+a.info{
+    color: grey;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+div#header ul#nav-bar ul{
+    background: red;
+    height: 70px;
+}
+
+
+div#header ul#nav-bar li#search-bar {
+       
+ 
+}
+
+ul#nav-bar li#home-link{
+    font-size: 14px;
+    color: red;
+    font-weight: bold;
+}
+
+ul#nav-bar li#link-to-cart{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+div#header ul#nav-bar li {
+    display: table-cell;
+    height: 30px;
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+}
+
+div#header ul#nav-bar li#search-bar form {
+
+}
+
+
+
+
+
+
+
+

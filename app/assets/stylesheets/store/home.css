@@ -1,5 +1,5 @@
 div#sidebar{
-
+   
 }
 
 div.container {
@@ -8,20 +8,29 @@ div.container {
 }
 
 ul#nav-bar{
+      padding: 0;
+      margin: 0 auto;
+      height: 50px;
       
 }
 
 div#logo{
-    background: red;
+    background: white;
+    height: 115px;
 }
 
 div#header{
-    background: cadetblue;
+    background: lightblue;
     height: 160px;
+    border-radius: 10px;
+    padding: 0px;
+    background: -moz-linear-gradient(top, #e6e8e0 90%,  #babbb5); /*para o Firefox*/
+    background: -webkit-gradient(linear, center bottom, center top, from(#00abeb), to(#fff)); /*para navegores Webkit*/
 }
 
-
-
-div#logo{
-    
+input#keywords{
+    width: 250px;
+    height: 30px;
+    padding: 0px;
 }
+
