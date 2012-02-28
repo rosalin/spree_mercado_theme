@@ -4,18 +4,20 @@
     <%= render 'shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
-
-    <div class="container">
-
-      <div id="header" data-hook>
-        <div id="logo" data-hook>
-          <%= logo %>
-        </div>
-        <ul id="nav-bar" data-hook>
-          <%= render 'shared/nav_bar' %>
-        </ul>
+    <div id="header" data-hook>
+      <div id="logo" data-hook>
+        <%= logo %>
       </div>
 
+      <div id="seearch">
+      <ul id="nav-bar" data-hook>
+        <%= render 'shared/nav_bar' %>
+      </ul>
+      </div>
+
+    </div>
+
+    <div class="container">
       <div id="wrapper" data-hook>
         <% if content_for?(:sidebar) %>
           <div id="sidebar" data-hook>
@@ -37,7 +39,7 @@
         <div id="footer-right" data-hook></div>
       </div>
     </div>
-    
+
     <%= render 'shared/google_analytics' %>
   </body>
 </html>
