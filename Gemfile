@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
 #gem 'sqlite3'
-gem 'spree_related_products', :git => 'git://github.com/spree/spree_related_products.git'
 
 group :test do
   gem 'rspec-rails', '= 2.6.1'
