@@ -263,10 +263,21 @@ a#checkout-link{
 }
 
 p#clear_cart_link a{
-    background: #94ae3a;
+    background: #656172;
     border-radius: 5px;
-    border: 1px solid #94ae3a;
+    color: white;
+    border: 1px solid #656172;
 }
+
+p#clear_cart_link input.button{
+    background: #656172;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    border: 1px solid #656172;
+}
+
+
 
 
 
