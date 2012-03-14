@@ -1,6 +1,6 @@
 
 body#default{
-    background: -moz-linear-gradient(top, #1455af 1%, #a9d4f4); /*para o Firefox*/
+    background: -moz-linear-gradient(top, #1455af 1%, #d5e9fc); /*para o Firefox*/
 }
 
 .container{
@@ -101,7 +101,7 @@ ul#main-nav-bar li#link-to-cart a.empty{
 }
 
 ul#main-nav-bar{
-    background: -moz-linear-gradient(top, #07389e 20%, #2587d7);
+    background: -moz-linear-gradient(bottom, #798eea 30%, #4f47e3);
     width: 960px;
     border-bottom: none;
     padding-bottom: 10px;
@@ -114,14 +114,19 @@ ul#products li a.info{
     font-size: 12px;
 }
 
-footer#footer{
-    background: -moz-linear-gradient(top, #07389e 20%, #2587d7);
-    height: 100px;
+
+div#footer-left p{
+    color: red;
+    background: yellow;
+    border: 1px solid white;
+    text-align: left;
+    
 }
 
 ul#products li span.price {
     font-size: 12px;
     color: #172f6c;
+
 }
 
 form#sidebar_products_search {
@@ -159,6 +164,7 @@ div[data-hook="taxon_children"]  .taxon h5.subtaxon-title a{
 div#wrapper #content{
     background: white;
 }
+
 
 ul#footer-left li.taxon-title h5#home-link{
     background:white;
@@ -229,7 +235,7 @@ table#cart-detail th{
 
 div#content h1{
     font-size: 12px;
-    color: darkblue;
+    color: #1a75cf;
 }
 
 td[data-hook="cart_item_description"] h4 a{
@@ -256,10 +262,11 @@ button#update-button{
 }
 
 a#checkout-link{
-    background: blue;
+    background: #08556f;
     border-radius: 5px;
+    color: white;
     font-size: 12px;
-    border: 1px solid black;
+    border: 1px solid #08556f;
 }
 
 p#clear_cart_link a{
@@ -277,9 +284,179 @@ p#clear_cart_link input.button{
     border: 1px solid #656172;
 }
 
+table#cart-detail tr[data-hook="cart_items_headers"]{
+    background: #1a75cf;
+    color: white;
+}
+
+
+table#cart-detail th{
+    color: white;
+}
+
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"],td[data-hook="cart_item_total"]{
+    font-size: 12px;
+    color: #1a75cf;
+}
 
 
 
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"],td[data-hook="cart_item_total"]{
+    font-size: 12px;
+    color: white;
+}
 
+div#subtotal{
+    background: #1a75cf;
+}
+
+div#subtotal h5{
+    color: white;
+    font-size: 12px;
+}
+
+div#subtotal h5 span#order-total{
+    font-size: 12px;
+    color: red;
+}
+
+div#product-variants h6.product-section-title{
+    font-size: 12px;
+    color: darkblue;
+}
+
+span.price{
+    font-size: 12px;
+    color: #0099ff;
+}
+
+div#product-properties a{
+    background: blue;
+}
+
+div#content h2{
+    font-size: 16px;
+    color: blue;
+    border-bottom: 1px solid blue;
+}
+
+div#existing-customer{
+    margin-top: 10px;
+    border-right: 1px solid #99ccff;
+}
+
+div#existing-customer h6{
+    font-size: 12px;
+    color: #1360AB;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div#guest_checkout h6{
+    font-size: 12px;
+    color: #1360AB;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div#guest_checkout {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+p input.button {
+    margin-top: 20px;
+    background: #1360AB;
+    margin-bottom: 20px;
+}
+
+div#password-credentials p label{
+    font-size:  12px;
+}
+
+div#password-credentials p input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+div[data-hook="login"]{
+    font-size: 12px;
+}
+
+div.row h3.columns{
+    font-size: 16px;
+    color: darkblue;
+}
+
+fieldset#billing{
+    border: none;
+    border-right: 1px solid #99ccff;
+}
+
+div.inner{
+    border: none;
+    line-height: 32px;
+}
+
+fieldset#shipping{
+    border: none;
+    border-right: 1px solid #99ccff;
+}
+
+table [data-hook="order_summary"] {
+    border: none;
+}
+
+div#checkout-summary{
+    border: none;
+}
+
+ol#checkout-step-address{
+    font-size: 14px;
+}
+
+div#errorExplanation{
+    background-color: blue;
+}
+
+footer#footer{
+    background: #e9f0ff;
+    height: 100px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer#footer-head{
+    background: #d9e6ff;
+    height: 200px;
+    width: 960px;
+  
+}
+
+div#footer-left{
+    color: black;
+}
+
+div#footer-right{
+    margin-left: 200px;
+    margin-left: 0px;
+    width: 130px;
+}
+
+div#search_bar_footer{
+    background: -moz-linear-gradient(bottom, #798eea 0%, #4f47e3);
+    text-align: center;
+    padding: 9px;
+}
+
+
+ul#images_payment{
+    margin-top: 10px;
+}
+
+ul#images_payment li{
+    float: left;
+    margin-left: 6px;
+}
 
 

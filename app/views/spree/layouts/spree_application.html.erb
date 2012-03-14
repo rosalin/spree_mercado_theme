@@ -53,10 +53,35 @@
 
       </div>
 
+      <div id="search_bar_footer">
+        <ul id="nav-bar" class="inline" data-hook>
+            <%= render :partial => 'shared/search_without_login' %>
+       </ul>
+      </div>
+
+      <footer id="footer-head">
+       
+      </footer>
+
       <footer id="footer" class="row" data-hook>
+      
         <div id="footer-left" class="columns alpha eight" data-hook>
+          <%= 'Aceitamos as seguintes formas de pagamentos '%> <!-- internacionalizar -->
+          <ul id="images_payment">
+            <li><%= image_tag "logo_hipercard.png" %></li>
+            <li><%= image_tag "visa-logo.jpg" %></li>
+            <li><%= image_tag "master_logo.jpg" %></li>
+            <li><%= image_tag "paypal.png" %></li>
+            <li><%= image_tag "pagseguro.jpg" %></li>
+            <li><%= image_tag "itau.png" %></li>
+            <li><%= image_tag "boleto.jpg" %></li>
+          </ul>
         </div>
-        <div id="footer-right" class="columns omega eight" data-hook></div>
+        <div id="footer-right" class="columns omega eight" data-hook>
+          <%= image_tag "https://a248.e.akamai.net/f/248/52872/0s/img.ebit.com.br/ebitBR/selo/img_742.png" %>
+        </div>
+
+
       </footer>
 
     </div>
