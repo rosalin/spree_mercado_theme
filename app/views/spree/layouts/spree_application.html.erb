@@ -36,14 +36,31 @@
         <% end %>
 
       </header>
+      <div id="teste">
+        <%= link_to image_tag "banner.jpeg" %>
+      </div>
 
       <div id="wrapper" class="row" data-hook>
 
         <% if content_for?(:sidebar) %>
           <aside id="sidebar" class="columns alpha four" data-hook>
             <%= yield :sidebar %>
+
+          <ul id="sale_banners">
+            <li><%= image_tag "http://logc201.xiti.com/get.ad?xts=439560&ati=INT-47-[lat_esq6_ar_condicionado]&type=AT&rn=rand_num&url=http://img.carrefour.net.br/mkt/banners/home/lateral/20120312/lateral_ipi-reduzido.jpg" %></li>
+            <li><%= image_tag "http://logc201.xiti.com/get.ad?xts=439560&ati=INT-47-[lat_esq10_universo_3d]&type=AT&rn=rand_num&url=http://img.carrefour.net.br/mkt/banners/home/lateral/20111220/universo-3d.jpg" %></li>
+            <li><%= image_tag "http://logc201.xiti.com/get.ad?xts=439560&ati=INT-4-[lat_esq3_samsung_galaxy_tab]&type=AT&rn=rand_num&url=http://img.carrefour.net.br/mkt/banners/home/lateral/20120321/b_esq1_samsung_galaxy_tab.jpg"%></li>
+            <li><%= image_tag  "http://logc201.xiti.com/get.ad?xts=439560&ati=INT-5-[lat_esq4_refrigerador ]&type=AT&rn=rand_num&url=http://img.carrefour.net.br/mkt/banners/home/lateral/20120321/b_esq2_refrigerador.jpg"%></li>
+            <li><%= image_tag "http://logc201.xiti.com/get.ad?xts=439560&ati=INT-5-[lat_esq4_refrigerador ]&type=AT&rn=rand_num&url=http://img.carrefour.net.br/mkt/banners/home/lateral/20120321/b_esq2_refrigerador.jpg"%></li>
+          </ul>
+            
           </aside>
+
+
+
         <% end %>
+
+      
 
         <div id="content" class="columns omega <% if !content_for?(:sidebar) %> sixteen alpha <% else %> twelve <% end %>" data-hook>
           <%= breadcrumbs(@taxon) %>
@@ -60,13 +77,30 @@
       </div>
 
       <footer id="footer-head">
-       
+         
       </footer>
 
       <footer id="footer" class="row" data-hook>
       
         <div id="footer-left" class="columns alpha eight" data-hook>
-          <%= 'Aceitamos as seguintes formas de pagamentos '%> <!-- internacionalizar -->
+          <ul id="institucional_list">
+          <li><%= link_to 'Sobre a neemo' %></li>
+          <li><%= link_to 'Politica de Privacidade' %></li>
+          <li><%= link_to 'Termo de uso e condições' %></li>
+          <li><%= link_to 'Seja nosso fornecedor' %></li>
+          <li><%= link_to 'Trabalhe conosco' %></li>
+          <li><%= link_to 'Mapa do site'%></li>
+        </ul>
+        <ul id="doubts_list">
+          <li><%= link_to 'Cadastro' %></li>
+          <li><%= link_to 'Como comprar' %></li>
+          <li><%= link_to 'Formas de pagamento' %></li>
+          <li><%= link_to 'Trabalhe conosco' %></li>
+
+        </ul>
+          <div id ="text_payments_accepted">
+            Aceitamos as seguintes formas de pagamento:
+          </div>
           <ul id="images_payment">
             <li><%= image_tag "logo_hipercard.png" %></li>
             <li><%= image_tag "visa-logo.jpg" %></li>
@@ -77,8 +111,14 @@
             <li><%= image_tag "boleto.jpg" %></li>
           </ul>
         </div>
+
         <div id="footer-right" class="columns omega eight" data-hook>
-          <%= image_tag "https://a248.e.akamai.net/f/248/52872/0s/img.ebit.com.br/ebitBR/selo/img_742.png" %>
+        <ul id="certification-images">
+          <li><%= image_tag "https://a248.e.akamai.net/f/248/52872/0s/img.ebit.com.br/ebitBR/selo/img_742.png" %></li>
+          <li><%= image_tag "site-blindado.png" %></li>
+          <li><%= image_tag "internet-segura.gif" %></li>
+          <li><%= image_tag "v.gif" %></li>
+        </ul>
         </div>
 
 
