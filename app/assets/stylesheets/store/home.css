@@ -1,6 +1,6 @@
 
 body#default{
-    background: -moz-linear-gradient(top, #1455af 1%, #d5e9fc); /*para o Firefox*/
+    background: -moz-linear-gradient(bottom, #F5FFFA 80%, #1455af);
     background: -webkit-gradient(linear, left top, left bottom, from(#1455af), to(#d5e9fc));
 }
 
@@ -86,6 +86,7 @@ li#link-to-login a{
 
 ul#main-nav-bar li#link-to-cart{
     background-color: -moz-linear-gradient(top, #316480 60%, #08556f);
+    background-image: none;
     padding-left: 20px;
     padding-top: 3px;
     -moz-border-radius: 5px;
@@ -100,6 +101,11 @@ ul#main-nav-bar li#link-to-cart a.empty{
     color: white;
     font-size: 12px;
     font-weight: bold;
+    border: 1px solid silver;
+    padding-top: 14px;
+    padding-bottom: 7px;
+    background: -moz-linear-gradient(top, #cccc00 40%, #ffff33);
+    color: darkblue;
 }
 
 ul#main-nav-bar{
@@ -173,7 +179,8 @@ ul#footer-left li.taxon-title h5#home-link{
 }
 
 body#product-details{
-       background: -moz-linear-gradient(top, #1455af 1%, #a9d4f4); /*para o Firefox*/
+      background: -moz-linear-gradient(bottom, #F5FFFA 80%, #1455af);
+      background: -webkit-gradient(linear, left top, left bottom, from(#1455af), to(#d5e9fc));
 }
 
 div#product-description h1.product-title{
@@ -225,8 +232,8 @@ div.add-to-cart button#add-to-cart-button{
 }
 
 body#cart{
-     /*background: -moz-linear-gradient(top, #1455af 1%, #a9d4f4); /*para o Firefox*/;
-     background: -moz-linear-gradient(bottom, #e6f4fd 50%, #052e97);
+     background: -moz-linear-gradient(bottom, #F5FFFA 80%, #1455af);
+    background: -webkit-gradient(linear, left top, left bottom, from(#1455af), to(#d5e9fc));
 }
 
 table#cart-detail th{
@@ -453,6 +460,8 @@ div#search_bar_footer{
 }
 
 
+
+
 ul#images_payment{
     margin-top: 5px;
     display: inline-block;
@@ -529,6 +538,30 @@ div#text_payments_accepted{
     margin-top: 15px;
     margin-left: 10px;
 }
+
+body#login{
+   background: -moz-linear-gradient(bottom, #d5e9fc 80%, SteelBlue); /*para o Firefox*/
+   background: -webkit-gradient(bottom, #d5e9fc 80%, SteelBlue);
+}
+
+body#signup{
+  
+    background: -webkit-gradient(bottom, #d5e9fc 80%, SteelBlue);
+}
+
+div#content div#errorExplanation{
+    background: white;
+    border: 1px solid silver;
+    color: black;
+}
+
+div#content div#errorExplanation h2{
+    background: white;
+    border-bottom: 1px solid silver;
+    color: red;
+}
+
+
 
 
 
