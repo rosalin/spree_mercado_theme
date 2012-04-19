@@ -53,6 +53,7 @@ form input[type="submit"]{
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
     background: -moz-linear-gradient(top, #316480 60%, #08556f); /*para o Firefox*/
+    background: -webkit-gradient(top, #316480 60%, #08556f);
 }
 
 
@@ -85,7 +86,8 @@ li#link-to-login a{
 }
 
 ul#main-nav-bar li#link-to-cart{
-    background-color: -moz-linear-gradient(top, #316480 60%, #08556f);
+    background: -moz-linear-gradient(top, #316480 60%, #08556f);
+    background: -webkit-gradient(top, #316480 60%, #08556f);
     background-image: none;
     padding-left: 20px;
     padding-top: 3px;
@@ -105,11 +107,13 @@ ul#main-nav-bar li#link-to-cart a.empty{
     padding-top: 14px;
     padding-bottom: 7px;
     background: -moz-linear-gradient(top, #cccc00 40%, #ffff33);
+    background: -webkit-gradient(top, #cccc00 40%, #ffff33);
     color: darkblue;
 }
 
 ul#main-nav-bar{
     background: -moz-linear-gradient(top, #337489 20%, #51c3cf);
+    background: -webkit-gradient(top, #337489 20%, #51c3cf);
     width: 960px;
     border-bottom: none;
     padding-bottom: 10px;
@@ -133,7 +137,6 @@ div#footer-left p{
 ul#products li span.price {
     font-size: 12px;
     color: #172f6c;
-
 }
 
 form#sidebar_products_search {
@@ -158,6 +161,7 @@ div#content #breadcrumbs ul.inline a{
     color: darkblue;
     font-size: 12px;
 }
+
 h3.taxon-title{
     color: darkblue;
     font-size: 12px;
@@ -170,6 +174,10 @@ div[data-hook="taxon_children"]  .taxon h5.subtaxon-title a{
 
 div#wrapper #content{
     background: white;
+}
+
+div[itemprop="description"]{
+    font-size: 14px;
 }
 
 
@@ -186,8 +194,8 @@ body#product-details{
 div#product-description h1.product-title{
     background: #e1e1ff;
     border-style: none;
-    font-size: 12px;
-    color: darkblue;
+    font-size: 14px;
+    color: #134f8d;
 }
 
 div#product-description{
@@ -196,17 +204,23 @@ div#product-description{
 }
 
 #product-price h6.product-section-title{
-    font-size: 12px;
-    color: darkblue;
+    font-size: 14px;
+    color: #134f8d;
 }
 
 #product-price span.price{
+    font-size: 14px;
+    color: #666666;
+}
+
+div[data-hook=product_taxons] ul#similar_items_by_taxon li a{
+    color: #666666;
     font-size: 14px;
 }
 
 div#taxon-crumbs h6.product-section-title{
     font-size: 12px;
-    color: darkblue;
+    color: #134f8d;
 }
 
 ul#similar_items_by_taxon li{
@@ -223,12 +237,17 @@ table#product-properties td{
 }
 
 div.add-to-cart button#add-to-cart-button{
-    background: #94ae3a;
+    background: #1b5b9b;
     -moz-border-radius: 5px;
-    border: 1px solid #94ae3a;
+    border: 1px solid #1b5b9b;
     font-size: 12px;
     font-weight: bold;
     padding: 9px;
+    vertical-align: top;
+}
+
+div.add-to-cart input{
+    border: 1px solid #1b5b9b;
 }
 
 body#cart{
@@ -242,18 +261,18 @@ table#cart-detail th{
 }
 
 div#content h1{
-    font-size: 12px;
+    margin-left: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
     color: #1a75cf;
+    font-weight: bold;
 }
 
 td[data-hook="cart_item_description"] h4 a{
-    font-size: 12px;
-    color: darkblue;
+    color: #2c54a5;
+    font-size: 14px;
 }
 
-td[data-hook="cart_item_description"]{
-    font-size: 12px;
-}
 
 table#cart-detail tr td[data-hook="cart_item_description"] td[data-hook="cart_item_price"]{
     font-size: 12px;
@@ -261,11 +280,36 @@ table#cart-detail tr td[data-hook="cart_item_description"] td[data-hook="cart_it
     border: 1px solid black;
 }
 
+div[data-hook="inside_cart_form"]{
+    border: 1px solid silver;
+    font-size: 12px;
+}
+
+div[data-hook="inside_cart_form"] tbody#line_items tr{
+    background: #f7faff;
+    border: 1px solid #f7faff;
+}
+
+div[data-hook="inside_cart_form"] tbody#line_items tr.alt{
+    background: #f7faff;
+    border: 1px solid #f7faff;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+input#order_line_items_attributes_0_quantity{
+    border: 1px solid #0066ff;
+}
+
+input#order_line_items_attributes_1_quantity{
+    border: 1px solid #0066ff;
+}
+
 button#update-button{
     background: #94ae3a;
     color: white;
     font-size: 12px;
-    border: 1px solid yellowgreen;
+    border: 1px solid blue;
     border-radius: 5px;
 }
 
@@ -277,64 +321,78 @@ a#checkout-link{
     border: 1px solid #08556f;
 }
 
+p#clear_cart_link{
+    display: inline-block;
+    background-color: red;
+}
+
+
 p#clear_cart_link a{
-    background: #656172;
+    margin-top: 0 auto;
+    background: green;
     border-radius: 5px;
     color: white;
     border: 1px solid #656172;
 }
 
 p#clear_cart_link input.button{
-    background: #656172;
+    background: brown;
     border-radius: 5px;
     color: white;
-    width: 100px;
+    width: 200px;
     border: 1px solid #656172;
+    font-size: 12px;
 }
+
 
 table#cart-detail tr[data-hook="cart_items_headers"]{
     background: #1a75cf;
     color: white;
 }
 
-
 table#cart-detail th{
     color: white;
 }
 
-table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"],td[data-hook="cart_item_total"]{
-    font-size: 12px;
-    color: #1a75cf;
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"]{
+    font-size: 14px;
+    color: #0052d6;
 }
 
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_description"]{
+    font-size: 14px;
+    color: #5188e6;
+}
 
-
-table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"],td[data-hook="cart_item_total"]{
-    font-size: 12px;
-    color: white;
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"]{
+    font-size: 14px;
+    color: #717171;
 }
 
 div#subtotal{
-    background: #1a75cf;
+    display: inline-block;
+    background: blue;
+    text-align: right;
+    margin-right: 0px;
+    text-transform: uppercase;
 }
 
 div#subtotal h5{
     color: white;
-    font-size: 12px;
-}
-
-div#subtotal h5 span#order-total{
-    font-size: 12px;
-    color: red;
+    font-size: 14px;
 }
 
 div#product-variants h6.product-section-title{
-    font-size: 12px;
-    color: darkblue;
+    font-size: 14px;
+    color: #134f8d;
+}
+
+div#product-variants ul{
+    font-size: 14px;
 }
 
 span.price{
-    font-size: 12px;
+    font-size: 14px;
     color: #0099ff;
 }
 
@@ -354,7 +412,7 @@ div#existing-customer{
 }
 
 div#existing-customer h6{
-    font-size: 12px;
+    font-size: 14px;
     color: #1360AB;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -379,7 +437,7 @@ p input.button {
 }
 
 div#password-credentials p label{
-    font-size:  12px;
+    font-size:  14px;
 }
 
 div#password-credentials p input{
@@ -454,13 +512,11 @@ div#footer-right{
 
 div#search_bar_footer{
     background: -moz-linear-gradient(top, #337489 20%, #51c3cf);
+    background: -webkit-gradient(top, #337489 20%, #51c3cf);
     text-align: center;
     padding: 9px;
     width: 940px;
 }
-
-
-
 
 ul#images_payment{
     margin-top: 5px;
@@ -558,12 +614,9 @@ div#content div#errorExplanation{
 div#content div#errorExplanation h2{
     background: white;
     border-bottom: 1px solid silver;
-    color: red;
+    color: blue;
 }
 
-
-
-
-
-
-
+div.containe figure#logo{
+    margin-top: 25px;
+ }
