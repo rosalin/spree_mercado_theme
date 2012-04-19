@@ -127,7 +127,7 @@ div#footer-left p{
     background: yellow;
     border: 1px solid white;
     text-align: left;
-    
+
 }
 
 ul#products li span.price {
@@ -438,7 +438,7 @@ footer#footer-head{
     background: #d9e6ff;
     height: 50px;
     width: 960px;
-  
+
 }
 
 div#footer-left{
@@ -449,7 +449,7 @@ div#footer-right{
     margin-left: 150px;
     height: 200px;
     width: 220px;
-    
+
 }
 
 div#search_bar_footer{
@@ -545,7 +545,7 @@ body#login{
 }
 
 body#signup{
-  
+
     background: -webkit-gradient(bottom, #d5e9fc 80%, SteelBlue);
 }
 
@@ -560,7 +560,6 @@ div#content div#errorExplanation h2{
     border-bottom: 1px solid silver;
     color: red;
 }
-
 
 
 
