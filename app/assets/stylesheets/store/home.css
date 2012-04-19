@@ -96,11 +96,11 @@ ul#main-nav-bar li#link-to-cart{
 }
 
 ul#main-nav-bar li#home-link a{
-    color: #a1b6ff;
+    color: black;
+    font-size: 12px;
 }
 
 ul#main-nav-bar li#link-to-cart a.empty{
-    color: white;
     font-size: 12px;
     font-weight: bold;
     border: 1px solid silver;
@@ -108,16 +108,14 @@ ul#main-nav-bar li#link-to-cart a.empty{
     padding-bottom: 7px;
     background: -moz-linear-gradient(top, #cccc00 40%, #ffff33);
     background: -webkit-gradient(top, #cccc00 40%, #ffff33);
-    color: darkblue;
 }
 
-ul#main-nav-bar{
-    background: -moz-linear-gradient(top, #337489 20%, #51c3cf);
-    background: -webkit-gradient(top, #337489 20%, #51c3cf);
-    width: 960px;
-    border-bottom: none;
-    padding-bottom: 10px;
-    padding-top: 10px;
+ul#main-nav-bar li#link-to-cart a.full{
+    color: black;
+}
+
+nav.columns ul#main-nav-bar{
+    margin-bottom: -230px;
 }
 
 ul#products li a.info{
@@ -596,7 +594,7 @@ ul#sale_banners li{
 }
 
 div#teste{
-    border: 1px solid silver;
+    margin-top: -20px;
     background: silver;
 }
 
