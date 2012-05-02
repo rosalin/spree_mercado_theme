@@ -102,16 +102,14 @@ ul#main-nav-bar li#home-link a{
 
 ul#main-nav-bar li#link-to-cart a.empty{
     font-size: 12px;
-    font-weight: bold;
-    border: 1px solid silver;
     padding-top: 14px;
     padding-bottom: 7px;
-    background: -moz-linear-gradient(top, #cccc00 40%, #ffff33);
-    background: -webkit-gradient(top, #cccc00 40%, #ffff33);
+    font-weight: bolder;
 }
 
 ul#main-nav-bar li#link-to-cart a.full{
     color: black;
+    font-weight: bold;
 }
 
 nav.columns ul#main-nav-bar{
@@ -191,6 +189,8 @@ body#product-details{
 
 div#product-description h1.product-title{
     margin-left: 0px;
+    height: 20px;
+    width: 560px;
     background: #e1e1ff;
     border-style: none;
     font-size: 14px;
@@ -260,8 +260,12 @@ table#cart-detail th{
 }
 
 div#content h1{
+    height: 45px;
     margin-left: 30px;
-    font-size: 20px;
+    font-size: 22px;
+    padding-left: 10px;
+    width: 400px;
+    padding-top: 25px;
     padding-bottom: 10px;
     color: #1a75cf;
     font-weight: bold;
@@ -327,6 +331,7 @@ a#checkout-link{
 }
 
 p#clear_cart_link{
+    margin-top: 30px;
     padding-top: 10px;
     display: inline-block;
     background-color: transparent;
@@ -335,14 +340,14 @@ p#clear_cart_link{
 
 p#clear_cart_link a{
     background: #85c425;
-    border-radius:5px;
+    border-radius: 5px;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
     font-weight: bold;
     border: 1px solid #85c425;
+    font-style: normal;
     font-size: 14px;
-
 }
 
 p#clear_cart_link input.button{
@@ -351,11 +356,11 @@ p#clear_cart_link input.button{
     color:#666666;
     width: 160px;
     height: 40px;
+    font-style: normal;
     border: 1px solid #dbdbdb;
     font-size: 14px;
     font-weight: bold;
 }
-
 
 table#cart-detail tr[data-hook="cart_items_headers"]{
     background: #1a75cf;
@@ -381,17 +386,21 @@ table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"]{
     color: #717171;
 }
 
-div#subtotal{
-    display: inline-block;
-    background: blue;
-    text-align: right;
-    margin-right: 0px;
-    text-transform: uppercase;
+div#subtotal h5 span.order-total{
+    font-size: 16px;
+    color: red;
+    font-weight: bolder;
 }
 
 div#subtotal h5{
+    margin-left: 600px;
     color: white;
-    font-size: 14px;
+    width: 330px;
+    background: #1a75cf;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 div#product-variants h6.product-section-title{
@@ -443,7 +452,9 @@ div#guest_checkout {
 }
 
 p input.button {
-    margin-top: 20px;
+    float: left;
+    margin-top: -3px;
+    margin-right: 5px;
     background: #1360AB;
     margin-bottom: 20px;
 }
@@ -629,6 +640,44 @@ div#content div#errorExplanation h2{
     color: blue;
 }
 
-div.containe figure#logo{
-    margin-top: 25px;
+div.container header#header figure#logo{
+    margin-top: 35px;
  }
+
+ div#empty-cart{
+     margin-top: -60px;
+}
+
+div.continue button{
+    float: right;
+    margin-top: -10px;
+
+}
+
+div#image_shopping_cart{
+    float:left;
+    width: 80px;
+    margin-right: 10px;
+}
+
+div#group_image_and_text{
+    height: 85px;
+}
+
+form#checkout_form_address div.form-buttons input.continue_button_primary{
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+}
+
+div.inner_billing{
+    line-height: 32px;
+}
+
+body#signup{
+    background: -moz-linear-gradient(bottom, #F5FFFA 80%, #1455af);
+    background: -webkit-gradient(linear, left top, left bottom, from(#1455af), to(#d5e9fc));
+}
+tbody#line_items tr input{
+    border: 1px solid blue;
+}
