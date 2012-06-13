@@ -624,7 +624,6 @@ body#login{
 }
 
 body#signup{
-
     background: -webkit-gradient(bottom, #d5e9fc 80%, SteelBlue);
 }
 
@@ -644,7 +643,7 @@ div.container header#header figure#logo{
     margin-top: 35px;
  }
 
- div#empty-cart{
+div#empty-cart{
      margin-top: -60px;
 }
 
@@ -680,4 +679,5 @@ body#signup{
 }
 tbody#line_items tr input{
     border: 1px solid blue;
+    width: 100px;
 }

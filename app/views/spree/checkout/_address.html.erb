@@ -171,7 +171,7 @@
 </div>
 <hr class="clear" />
 <div class="form-buttons" data-hook="buttons">
-  <%= submit_tag t(:save_and_continue), :class => 'continue_button_primary' %>
+  <%= submit_tag t(:save_and_continue), :class => 'continue_button_primary', :onclick => "fulfillDeliveryAddress()" %>
 </div>
 
 
@@ -182,6 +182,35 @@
       {
         cb.checked = true;
         $(".inner").hide();
+      }
+  }
+
+  function fulfillDeliveryAddress()
+  {
+    var cb = document.getElementById("order_use_billing");
+    if (cb.checked == true)
+      {
+         //Obtendo os valores do formulario de cobranca
+         var firstname = $('#order_bill_address_attributes_firstname').val();
+         var lastname = $('#order_bill_address_attributes_lastname').val();
+         var address1 = $('#order_bill_address_attributes_address1').val();
+         var address2 = $('#order_bill_address_attributes_address2').val();
+         var country_id = $('order_bill_address_attributes_country_id').val();
+         var state_id = $('#order_bill_address_attributes_state_id').val();
+         var city = $('#order_bill_address_attributes_city').val();
+         var zipcode = $('#order_bill_address_attributes_zipcode').val();
+         var phone = $('#order_bill_address_attributes_phone').val();
+
+         //colocando no formulario de cobranca os valores obtidos no formulario de cobranca
+         document.getElementById('order_ship_address_attributes_firstname').value = firstname;
+         document.getElementById('order_ship_address_attributes_lastname').value = lastname;
+         document.getElementById('order_ship_address_attributes_address1').value = address1;
+         document.getElementById('order_ship_address_attributes_address2').value = address2;
+         document.getElementById('order_ship_address_attributes_country_id').value = country_id;
+         document.getElementById('order_ship_address_attributes_state_id').value = state_id;
+         document.getElementById('order_ship_address_attributes_city').value = city
+         document.getElementById('order_ship_address_attributes_zipcode').value = zipcode;
+         document.getElementById('order_ship_address_attributes_phone').value = phone;
       }
   }
 </script>
